@@ -1,5 +1,5 @@
 class Superhero
-  attr_accessor :name, :motto
+  attr_accessor :name, :motto, :member
 
   def initialize(name, motto)
     @name = name
