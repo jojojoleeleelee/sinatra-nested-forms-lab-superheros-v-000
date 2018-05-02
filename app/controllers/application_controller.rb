@@ -9,7 +9,7 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      @hero = Superhero.new(binding.pry)
+      @hero = Superhero.new(params[:superhero][:name], params[:superhero][:motto])
       @member1 = Member.new()
       @member2 = Member.new()
       erb :super_hero
