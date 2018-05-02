@@ -12,6 +12,7 @@ class App < Sinatra::Base
       @hero = Superhero.new(params[:team][:name], params[:team][:motto])
       @member1 = Member.new(params[:team][:member][0][:name], params[:team][:member][0][:power], params[:team][:member][0][:bio])
       @member2 = Member.new(params[:team][:member][1][:name], params[:team][:member][1][:power], params[:team][:member][1][:bio])
+      @member3 = Member.new(params[:team][:member][2][:name], params[:team][:member][2][:power], params[:team][:member][2][:bio])
 
       erb :super_hero
     end
