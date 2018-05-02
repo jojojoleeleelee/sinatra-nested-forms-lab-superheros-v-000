@@ -10,6 +10,7 @@ class App < Sinatra::Base
 
     post '/teams' do
       @hero = Superhero.new(binding.pry)
+      @member1 = 
       erb :super_hero
     end
 end
