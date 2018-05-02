@@ -5,3 +5,5 @@ class Member
     @name = name
     @power = power
     @bio = bio
+  end
+end
