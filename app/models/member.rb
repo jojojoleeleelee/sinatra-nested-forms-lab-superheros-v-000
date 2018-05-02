@@ -3,3 +3,5 @@ class Member
 
   def initialize(name, power, bio)
     @name = name
+    @power = power
+    @bio = bio
